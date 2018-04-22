@@ -70,7 +70,7 @@ const logsMenu = nodeArray => {
     return {
       reply_markup: {
         keyboard: [
-          ["<< Back", "📄 Recent logs\n" + nodeName, 'followLogsMsg\n' + nodeName],
+          ["<< Back", "📄 Recent logs\n" + nodeName],
           ["⚠️ Forks cause 1\n" + nodeName, "⚠️ Forks cause 2\n" + nodeName, "⚠️ Forks cause 3\n" + nodeName],
           ["⚠️ Forks cause 4\n" + nodeName, "⚠️ Forks cause 5\n" + nodeName, "Logs All Forks\n" + nodeName],
           ["Logs SIGKILL\n" + nodeName, "Logs SIGABRT\n" + nodeName, "Logs Consensus\n" + nodeName]
