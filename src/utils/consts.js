@@ -8,11 +8,6 @@ exports.intents =
       "ASK_PASSWORD_SET_FORGING_ON",
   };
 
-exports.snapshot_servers =
-  {
-    GREENDRAGON_MAIN: "https://snapshot.lisknode.io"
-  };
-
 exports.menu = {
   reply_markup: {
     keyboard: [

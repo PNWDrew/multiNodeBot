@@ -172,37 +172,6 @@ const setForgingOff = async (nodeArray) => {
 
 //**********************************************************************************************************//
 //                                                                                                          //
-//                                             rebuildNode                                                  //
-//                                                                                                          //
-//**********************************************************************************************************//
-const rebuildNode = async (nodeArray) => {
-    let returnValue = {message: "", status: "NOK"};
-
-    if (nodeArray.length != 1)
-        return 'Sorry. Nodename not found or there is more then one server configured with the same name!';
-
-    let node = nodeArray[0];
-
-    const replyRebuild = await axios
-        .post(node.url + node.monitorServicePort + "/api/node", querystring.stringify({ password: 'weakpassword', request: 'rebuild'}))
-        .catch( () => {
-            winston.log('debug','Error in rebuildNode');
-            returnValue.message = "Sorry. Starting rebuild was not successfull.";
-            return (returnValue);
-        });
-
-    if (!replyRebuild || !replyRebuild.data ){
-        returnValue.message = "Sorry. Starting rebuild was not successfull.";
-        return (returnValue);
-    }
-
-    returnValue.message = "Rebuild was started for " + node.name;
-    returnValue.status = "OK";
-    return (returnValue);
-};
-
-//**********************************************************************************************************//
-//                                                                                                          //
 //                                             restartCore                                                  //
 //                                                                                                          //
 //**********************************************************************************************************//
@@ -276,5 +245,4 @@ exports.checkBlockHeight    = checkBlockHeight;
 exports.checkBlockHeights   = checkBlockHeights;
 exports.setForgingOn        = setForgingOn;
 exports.setForgingOff       = setForgingOff;
-exports.rebuildNode         = rebuildNode;
 exports.restartCore         = restartCore

@@ -26,8 +26,7 @@ const serverMenu = nodeArray => {
       reply_markup: {
         keyboard: [
           ["🔎 Block Height " + nodeName, "📦 Server status " + nodeName],
-          ["🔎 Logs " + nodeName],
-          ["🔑 Rebuild " + nodeName, "🔑 Restart " + nodeName],
+          ["🔎 Logs " + nodeName, "🔑 Restart " + nodeName],
           ["🔑 Forge On " + nodeName, "🔑 Forge Off " + nodeName],
           ["🏠 Menu"]
         ]

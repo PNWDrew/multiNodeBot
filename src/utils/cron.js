@@ -17,6 +17,7 @@ cron.schedule("* * * * *", () => {
 });
 
 cron.schedule("* * * * *", () => {
+  return;
   //Every minute
   if (!executeServerStatusCron) return;
   console.success("Excuting server status check");

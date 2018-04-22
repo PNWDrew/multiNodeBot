@@ -37,37 +37,6 @@ const getServerStatus = async (nodeArray) => {
 
 //**********************************************************************************************************//
 //                                                                                                          //
-//                                              rebootServer                                                //
-//                                                                                                          //
-//**********************************************************************************************************//
-const rebootServer = async (nodeArray) => {
-    let returnValue = {message: "", status: "NOK"};
-
-    if (nodeArray.length != 1)
-        return 'Sorry. Nodename not found or there is more then one server configured with the same name!';
-
-    let node = nodeArray[0];
-
-    const replyRebootServer = await axios
-        .post(node.url + node.monitorServicePort + "/api/server", querystring.stringify({ password: 'notUsedYet', request: 'rebootServer'}))
-        .catch(function (error) {
-            winston.log('debug',error);
-            returnValue.message = "Sorry. Rebboting the server was not successfull.";
-            return (returnValue);
-        });
-
-    if (!replyRebootServer || !replyRebootServer.data ){
-        returnValue.message = "Sorry. Rebboting the server was not successfull.";
-        return (returnValue);
-    }
-
-    returnValue.message = "Server reboot in progress for: " + node.name;
-    returnValue.status = "OK";
-    return (returnValue);
-};
-
-//**********************************************************************************************************//
-//                                                                                                          //
 //                                             getServerLogs                                                //
 //                                                                                                          //
 //**********************************************************************************************************//
@@ -106,5 +75,4 @@ const getServerLogs = async (nodeArray, logType, cause) => {
 };
 
 exports.getServerStatus     = getServerStatus;
-exports.rebootServer        = rebootServer;
 exports.getServerLogs       = getServerLogs;

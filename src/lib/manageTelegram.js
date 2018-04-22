@@ -141,12 +141,6 @@ const parseMessage = async (settings, msgText) => {
             manageIntent.setIntent(manageIntent.intents.ASK_PASSWORD_SET_FORGING_OFF, msgText);
             sendMessage(settings.chatId,'🔐 Please provide the password to switch forging off..', constTelegram.cancelMenu());
         }
-
-    } else if (msgText.toLowerCase().indexOf('rebuild') !== -1) {                                           // set intent rebuild
-        if (!promptIntent.waitingPrompt){
-            manageIntent.setIntent(manageIntent.intents.ASK_PASSWORD_REBUILD, msgText);
-            sendMessage(settings.chatId,'🔐 Please provide the password to rebuild..', constTelegram.cancelMenu());
-        }
  
     } else if (msgText.toLowerCase().indexOf('restart') !== -1) {                                           // set intent restart core
         if (!promptIntent.waitingPrompt){
@@ -191,18 +185,6 @@ const parseMessage = async (settings, msgText) => {
                 let nodeName = lMsgText.toLowerCase().substring(13, lMsgText.length);
                 let selectedNode = settings.remoteNodes.filter(node => node.name.toLowerCase() == nodeName);
                 manageNodes.setForgingOff(selectedNode).then( ( retValue ) => {
-                    sendMessage(settings.chatId, retValue.message, constTelegram.mainMenu );
-                });
-            }
-        }
-
-        if (promptIntent.lastIntent == manageIntent.intents.ASK_PASSWORD_REBUILD &&                         // do rebuild and reply
-            promptIntent.lastMessage.toLowerCase().indexOf('rebuild') !== -1 ){
-
-            if (validOTP){
-                let nodeName = lMsgText.toLowerCase().substring(11, lMsgText.length);
-                let selectedNode = settings.remoteNodes.filter(node => node.name.toLowerCase() == nodeName);
-                manageNodes.rebuildNode(selectedNode).then( ( retValue ) => {
                     sendMessage(settings.chatId, retValue.message, constTelegram.mainMenu );
                 });
             }
