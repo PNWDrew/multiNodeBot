@@ -43,4 +43,13 @@ Login to your server that you want to use to monitore your Onz servers
 
 Scan the QR-Code with your Google Authenticator App
 
-Copy the generated secret at the end to your multiNodeBot src/config.js file (exports.OTPsecret="Paste your secret here")
+Copy the generated secret at the end
+
+`nano src/config.js`
+
+paste the secret to exports.OTPsecret="Paste your secret here"
+
+close and safe config-js file
+
+`npm start`
+
