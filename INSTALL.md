@@ -9,6 +9,7 @@
  - Follow the steps that the BotFather is telling you
  - At the end the BotFather gives you your HTTP API key which you need later in your config file
  
+ 
 
 ### Node.js
 
@@ -16,12 +17,13 @@ Login to your server that you want to use to monitore your Onz servers
 
 cd ~
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+'curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -'
 
 sudo apt-get install -y nodejs
 
 
-## Install
+
+## Install multiNodeBot
 
  git clone https://github.com/tool462/multiNodeBot.git
  
