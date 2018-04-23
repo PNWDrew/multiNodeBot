@@ -21,8 +21,8 @@
 <img src="https://github.com/tool462/multiNodeBot/blob/master/images/logsMenue.PNG?raw=true" data-canonical-src="https://github.com/tool462/multiNodeBot/blob/master/images/logsMenue.PNG?raw=true" width="505" />
 
 ### Block Heights Reply
-<img src="https://github.com/tool462/multiNodeBot/blob/master/images/blockHeightsMenue.PNG?raw=true" data-canonical-src="https://github.com/tool462/multiNodeBot/blob/master/images/blockHeightsMenue.PNG?raw=true" width="505" />
+<img src="https://github.com/tool462/multiNodeBot/blob/master/images/blockHeightsReply.PNG?raw=true" data-canonical-src="https://github.com/tool462/multiNodeBot/blob/master/images/blockHeightsReply.PNG?raw=true" width="505" />
 
 ### Server Status Reply (only available with nodeBotAPI installed on Onz Server)
-<img src="https://github.com/tool462/multiNodeBot/blob/master/images/serverStatusMenue.PNG?raw=true" data-canonical-src="https://github.com/tool462/multiNodeBot/blob/master/images/serverStatusMenue.PNG?raw=true" width="505" />
+<img src="https://github.com/tool462/multiNodeBot/blob/master/images/serverStatusReply.PNG?raw=true" data-canonical-src="https://github.com/tool462/multiNodeBot/blob/master/images/serverStatusReply.PNG?raw=true" width="505" />
 
