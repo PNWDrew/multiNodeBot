@@ -9,12 +9,10 @@
  - Follow the steps that the BotFather is telling you
  - At the end the BotFather gives you your HTTP API key which you need later in your config file
  
- 
- 
- 
- 
 
 ### Node.js
+
+Login to your server that you want to use to monitore your Onz servers
 
 cd ~
 
@@ -34,3 +32,8 @@ sudo apt-get install -y nodejs
  cp src/config_mainnet.js src/config.js
  
  
+ 
+ 
+ ### 2FA (Google Authenticator)
+
+Login to your server that you want to use to monitore your Onz servers
