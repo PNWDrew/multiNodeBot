@@ -15,23 +15,23 @@
 
 Login to your server that you want to use to monitore your Onz servers
 
-cd ~
+`cd ~`
 
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
 
-sudo apt-get install -y nodejs
+`sudo apt-get install -y nodejs`
 
 
 
 ## Install multiNodeBot
 
- git clone https://github.com/tool462/multiNodeBot.git
+ `git clone https://github.com/tool462/multiNodeBot.git`
  
- cd multiNodeBot
+ `cd multiNodeBot`
  
- npm install
+ `npm install`
  
- cp src/config_mainnet.js src/config.js
+ `cp src/config_mainnet.js src/config.js`
  
  
  
