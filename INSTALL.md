@@ -10,7 +10,9 @@
  - At the end the BotFather gives you your HTTP API key which you need later in your config file
  
 ### Git
-#### Install:
+
+`cd ~`
+
 `sudo apt-get install git`
 
 ### Node.js
@@ -25,6 +27,8 @@ Login to your server that you want to use to monitore your Onz servers
 
 ## Install multiNodeBot
 
+  Login to your server that you want to use to monitore your Onz servers
+
  `git clone https://github.com/tool462/multiNodeBot.git`
  
  `cd multiNodeBot`
@@ -37,23 +41,27 @@ Login to your server that you want to use to monitore your Onz servers
  
  ### 2FA (Google Authenticator)
 
-Login to your server that you want to use to monitore your Onz servers
+  Login to your server that you want to use to monitore your Onz servers
 
-`cd ~`
+  `cd ~`
 
-`cd multiNodeBot`
+  `cd multiNodeBot`
 
-`npm run generate-password`
+  `npm run generate-password`
 
-Scan the QR-Code with your Google Authenticator App
+  Scan the QR-Code with your Google Authenticator App
 
-Copy the generated secret at the end
+  Copy the generated secret at the end
 
-`nano src/config.js`
+  `nano src/config.js`
 
-paste the secret to exports.OTPsecret="Paste your secret here"
+  paste the secret to exports.OTPsecret="Paste your secret here"
 
-close and safe config-js file
+  close and safe config-js file
 
-`npm start`
+  `npm start`
+
+### Customize config.js
+
+Add your server data to the 'remote servers' section
 
