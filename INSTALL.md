@@ -65,3 +65,5 @@ Login to your server that you want to use to monitore your Onz servers
 
 Add your server data to the 'remote servers' section
 
+Please don't use the following strings in your server names:
+ back / log / block / height / server / tool / forge / status
