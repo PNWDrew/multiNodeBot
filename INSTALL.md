@@ -67,7 +67,7 @@ Login to your server that you want to use to monitore your Onz servers ( the che
   
   exports.telegramAPIToken  = "487437457:asdfghjkyxcvbnmqwertzuio";
 
-  close and safe config.js file
+  close and save config.js file
   
 ### Add Telegram chatId to config.js
 
@@ -86,7 +86,7 @@ Login to your server that you want to use to monitore your Onz servers ( the che
   Please don't use the following strings in your server names:
   back / log / block / height / server / tool / forge / status
  
-  close and safe config.js file
+  close and save config.js file
   
   `npm stop`
   
