@@ -13,13 +13,13 @@
  
 ### Git
 
+Login to your server that you want to use to monitore your Onz servers
+
 `cd ~`
 
 `sudo apt-get install git`
 
 ### Node.js
-
-Login to your server that you want to use to monitore your Onz servers
 
 `cd ~`
 
