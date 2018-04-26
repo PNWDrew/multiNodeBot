@@ -1,12 +1,11 @@
-// MY CONFIG (Delegate cluster MAINNET)
-// Create a new file called "config.js" and replace all the fields with your configuration
+// MY CONFIG (tool_462 MAINNET)
 
 // Telegram settings
-exports.telegramAPIToken  = "487437457:asdfghjkyxcvbnmqwertzuio"; // Your telegram bot API key. Ask the @botfather for an api key
-exports.chatId            = ""; // your telegram id. This will make sure that the msgs are sent only to you
+exports.telegramAPIToken = "487437457:AAGN6cvDod2Cz6N0ycVzkElOE2K4gkpwBOU"; // Your telegram bot API key. Ask the @botfather for an api key
+exports.chatId = "502459691"; // your telegram id. This will make sure that the msgs are sent only to you
 
 // 2AF settings (i.e. Google authenticator)
-exports.OTPsecret         = "QWERTZUIOPASDFGHJKLYXCVBNMYXCVBNASDFGHJQWERTZUI"; // run "npm run generate-password" in order to get this setting
+exports.OTPsecret = "FZRGMTBBHRBGW4Z2FBXVAN3LGVEWGQSTG4YGGR32JNKG6PBSIQ2Q"; // run "npm run generate-password" in order to get this setting
 
 // Height check settings
 exports.maxDeltaBlockHeight = 2; // The difference of block heights between your node and the others before triggering an alarm
@@ -20,30 +19,41 @@ exports.cpuThreshold = 50; // Sends a notification to the user when cpu usage is
 exports.spaceUsageThreshold = 50; // Sends a notification to the user when memory usage is over this %
 exports.memoryThreshold = 50; // Sends a notification to the user when memory usage is over this %
 
-//Your nodes:
+//exports.liskPWDFolder = "/home/lisk/lisk-main"; // the path of your lisk node
+
 exports.remoteNodes = [
   {
-    url: "http://123.45.67.89",
+    url: "http://188.68.51.83",
     port: ":11000",
-    name: "DelegateName",
-    secret: "history history history history history history history history history history history history",
+    name: "tool_462",
+    secret: "stable history expire mimic amateur shove proof nephew tobacco often adult reason",
     monitorServicePort: ":8080",
     status: "",
     monitor: true
   },
   {
-    url: "http://123.45.67.89",
+    url: "http://173.249.34.4",
     port: ":11000",
-    name: "DelegateName_BU",    // please do not use the string 'backup' or the button 'Back' will not work
-    secret: "history history history history history history history history history history history history",
+    name: "tool_462_bu_Co",
+    secret: "stable history expire mimic amateur shove proof nephew tobacco often adult reason",
     monitorServicePort: ":8080",
     status: "",
     monitor: true
+  },
+  {
+    //url: "http://5.45.96.250",
+    url: "http://127.0.0.1",
+    port: ":8000",
+    name: "local02",
+    secret: "",
+    monitorServicePort: ":8080",
+    status: "",
+    monitor: false
   }
 ];
 
 exports.referenceNodes = [
-  //reference nodes to check for the block heights
+  //nodes to check for the block heights
   {
     url: "https://node01.onzcoin.com",
     port: "",

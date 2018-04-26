@@ -15,5 +15,5 @@ if (settings.chatId && settings.rebootWelcome)
 
 bot.on("message", async function(msg) {
   console.log(msg.text);
-  parseMessage(settings, msg.text);
+  parseMessage(settings, msg);
 });
