@@ -13,7 +13,7 @@
  
 ### Git
 
-Login to your server that you want to use to monitore your Onz servers
+Login to your server that you want to use to monitore your Onz servers ( the cheapest vps will work )
 
 `cd ~`
 
