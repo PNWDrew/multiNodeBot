@@ -9,7 +9,15 @@ const { testAuthenticationOTP } = require("./auth");
 
 let promptIntent = {};
 
-const parseMessage = async (settings, msgText) => {
+const parseMessage = async (settings, msg) => {
+    let msgText = msg.text;
+
+    if (settings.chatId == ""){
+        sendMessage( msg.chat.id, "Your ChatID: " + msg.chat.id );
+        return;
+    }
+    if (settings.chatId != msg.chat.id) return;
+
     promptIntent = manageIntent.getIntent();
 
     //******************************************************************************************************//
