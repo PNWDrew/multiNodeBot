@@ -8,6 +8,8 @@
  - Send a /newbot command to the BothFather
  - Follow the steps that the BotFather is telling you
  - At the end the BotFather gives you your HTTP API key which you need later in your config file
+ - Click on the link that the BotFather gives you in the same message (i.e.: t.me/MyNewBot )
+ - Click on START at the bottom of telegram
  
 ### Git
 
