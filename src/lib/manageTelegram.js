@@ -25,7 +25,7 @@ const parseMessage = async (settings, msg) => {
     //******************************************************************************************************//
     if (msgText.toLowerCase().indexOf('menu') !== -1) {                                                     // reply to menu
         manageIntent.cleanIntent();
-        sendMessage(settings.chatId,'👋 Hey! How can I help you with?', constTelegram.mainMenu);
+        sendMessage(settings.chatId,'👋 Hey! How can I help you?', constTelegram.mainMenu);
 
     } else if (msgText.toLowerCase().indexOf('cancel') !== -1) {                                            // reply to cancel request
         manageIntent.cleanIntent();
