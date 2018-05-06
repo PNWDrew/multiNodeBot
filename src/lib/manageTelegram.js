@@ -258,7 +258,7 @@ function getServersMenu(settings){
 
         // set menu items in row
         if (iRowCounter >= MAX_BUTTONS_IN_ROW){
-            iRowcounter=0;
+            iRowCounter=0;
             arrayLine = [];
         }
         arrayLine.push( node.name );
